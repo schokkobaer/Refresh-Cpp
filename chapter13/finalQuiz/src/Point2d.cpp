@@ -5,12 +5,7 @@ void Point2d::print()
 {
     std::cout << "Point2d("<< m_x << ", "<< m_y <<")\n";
 }
-/** @brief This function calculates the distance between the point this class and any other point.
- *         Each point is defined by two parameters          
- *
- *  @param p1 The other 2 dimensional point
- *  @return The distance
- */
+
 double Point2d::distanceTo(const Point2d &p2)
 {
     return std::sqrt(std::pow((m_x - p2.m_x), 2)+ std::pow((m_y - p2.m_y), 2));

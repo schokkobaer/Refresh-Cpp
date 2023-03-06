@@ -16,7 +16,22 @@ public:
     ~Point2d(){};
 
     void print();
+
+    /** @brief This function calculates the distance between the point this class and any other point.
+ *         Each point is defined by two parameters          
+ *
+ *  @param p1 The other 2 dimensional point
+ *  @return The distance
+ */
     double distanceTo(const Point2d& p2);
+    
+    /** @brief This function calculates the distance between two points. Each point is defined
+ *          by two parameters
+ *
+ *  @param p1 The first 2 dimensional point
+ *  @param p2 The second 2 dimensional point
+ *  @return The distance
+ */
     friend double distanceFrom(const Point2d& p1, const Point2d& p2);
 
 
